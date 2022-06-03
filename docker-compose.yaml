@@ -1,0 +1,9 @@
+services:
+  app:
+    image: node:lts
+    working_dir: /my-app
+    volumes:
+      - ./my-app:/my-app
+    ports:
+      - 8080:3000
+    command: ["npm", "run", "dev"]
